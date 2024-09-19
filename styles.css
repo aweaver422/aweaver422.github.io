@@ -1,0 +1,19 @@
+body {
+    background-color: #E0D2B6;
+}
+
+h1 {
+    background-color: #61502F;
+    color: #E0D2B6;
+    text-align: center;
+}
+
+h2 {
+    color: #7B5C8B;
+    font-style: italic;
+    margin-left: 10%;
+}
+
+.h2OTHER {
+    color: #2F6147;
+}
