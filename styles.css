@@ -18,6 +18,18 @@ h2 {
     color: #2F6147;
 }
 
+.projects { 
+    display:flex; 
+    flex-wrap:wrap; 
+}
+
 .project {
-    margin-left: 10%
+    width: 30%;
+    margin: 10px;
+    padding: 20px 10px;
+    background: rgb(128, 164, 136); /* pick a color */
+    border-radius: 25%;
+}
+img {
+    width: 350px;
 }
