@@ -62,7 +62,7 @@ h3 {
     display:flex;
     flex-wrap:wrap;
     margin-right: 100px;
-    margin-left: 100px;
+    margin-left: 50px;
     justify-content: center;
 }
 
@@ -71,6 +71,7 @@ h3 {
     height: 200px;
     border-radius: 25%;
     border: 2px solid rgb(126, 14, 201);
+    margin-left: 150px;
 }
 
 .about p {
