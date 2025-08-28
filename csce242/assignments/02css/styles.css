@@ -49,7 +49,7 @@ table {
     width: 100%;
     margin: auto;
     border-collapse: collapse;
-    border-color: beige;
+    border: 3px solid rgb(4, 4, 40);
 }
 
 /* SECTIONS */
@@ -60,6 +60,8 @@ table {
 
 #firstSection img {
     width: 30%;
+    border: 3px solid rgb(4, 4, 40);
+    padding: 2px;
 }
 
 #firstSection p {
@@ -73,6 +75,8 @@ table {
 
 #secondSection img {
     width: 30%;
+    border: 3px solid rgb(4, 4, 40);
+    padding: 2px;
 }
 
 #secondSection p {
