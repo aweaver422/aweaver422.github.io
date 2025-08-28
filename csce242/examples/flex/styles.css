@@ -28,6 +28,7 @@ body {
 
 #main-nav ul {
     list-style-type: none;
+    padding-left:0;
 }
 
 #main-nav li {
@@ -36,6 +37,11 @@ body {
 
 #main-nav li:first-child {
     border-top: 1px solid white;
+}
+
+#main-nav a:hover {
+    background: white;
+    color: #6E6F73;
 }
 
 /* Typography */
@@ -52,5 +58,29 @@ h1 {
 
     #content {
         width: 70%;
+    }
+
+    /* Columns */
+    .columns {
+        display: flex;
+    }
+
+    /* Main Nav */
+    #main-nav li{
+        flex:1;
+    }
+    #main-nav li, #main-nav li:first-child {
+        border: none;
+    }
+
+    #main-nav a{
+        padding:5px;
+        text-align: center;
+    }
+
+    #main-nav a:hover {
+        background: #6E6F73;
+        color:white;
+        border-bottom:1px solid white;
     }
 }
