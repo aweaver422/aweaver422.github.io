@@ -1,0 +1,23 @@
+#content {
+    width: 70%;
+    margin: auto;
+    padding: 1%;
+    border-radius: 5px;
+    background-color: #718698;
+    font-family:'Times New Roman', Times, serif;
+    color: rgb(25, 24, 51);
+}
+
+p {
+    color: rgba(25, 24, 51, 0.76);
+}
+
+body {
+    background-image: url(images/bluegrayBackground.jpg);
+    background-size: cover;
+}
+
+a {
+    text-decoration: none;
+    color: rgb(113, 1, 125);
+}

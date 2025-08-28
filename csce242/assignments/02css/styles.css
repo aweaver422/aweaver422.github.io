@@ -1,0 +1,101 @@
+/* OUTSIDE  */
+
+#content {
+    width: 70%;
+    margin: auto;
+    padding: 1%;
+    border-radius: 5px;
+    background-color: #3A5998;
+    font-family:'Times New Roman', Times, serif
+}
+
+#innerContent {
+    margin-left: 5%;
+    margin-right: 5%;
+}
+
+body {
+    background-image: url(images/starbackground.jpg);
+    background-size: cover;
+
+}
+
+/* HEADERS */
+h1, h2 {
+    text-align: center;
+}
+
+h1 {
+    color: white;
+    text-shadow: 2px 2px rgb(70, 70, 70);
+}
+
+h2 {
+    color: rgba(255, 255, 255, 0.474);
+    font-style: italic;
+}
+
+/* TABLE */
+td, th {
+    border: 1px solid darkslategray;
+    background-color: #697da5;
+}
+
+th {
+    background-color: #94a3c0;
+}
+
+table {
+    width: 100%;
+    margin: auto;
+    border-collapse: collapse;
+    border-color: beige;
+}
+
+/* SECTIONS */
+#firstSection {
+    display: flex;
+    align-items: center;
+}
+
+#firstSection img {
+    width: 30%;
+}
+
+#firstSection p {
+    margin-left: 10px;
+}
+
+#secondSection {
+    display: flex;
+    align-items: center;
+}
+
+#secondSection img {
+    width: 30%;
+}
+
+#secondSection p {
+    margin-left: 10px;
+}
+
+#thirdSection {
+    display: flex;
+    align-items: center;
+}
+
+#thirdSection p {
+    margin-right: 5px;
+    width: 90%;
+}
+
+/* OTHER SPECIFICS */
+#hogsmeade {
+    display: block;
+    width: 80%;
+    margin: auto;
+}
+
+hr {
+    visibility: hidden;
+}
