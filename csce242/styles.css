@@ -1,3 +1,4 @@
+/* Mobile */
 #content {
     width: 70%;
     margin: auto;
@@ -6,6 +7,8 @@
     background-color: #718698;
     font-family:'Times New Roman', Times, serif;
     color: rgb(25, 24, 51);
+    text-align: center;
+    padding-bottom: 50px;
 }
 
 p {
@@ -19,5 +22,52 @@ body {
 
 a {
     text-decoration: none;
-    color: rgb(113, 1, 125);
+    color: white;
+}
+
+#assignments{
+    display: block;
+    justify-content: center;
+}
+
+#name {
+    text-align: left;
+}
+
+.section {
+    background-color: #112639;
+    padding: 1%;
+    margin: 10px auto;
+    /* align-items: center; */
+    border-radius: 10px;
+    color: lightgray;
+}
+
+.section p {
+    color: gray;
+}
+
+
+/* Large Screens */
+@media only screen and (min-width: 768px) {
+    #content {
+        width: 70%;
+        padding: 1%;
+        padding-bottom: 50px;
+    }
+
+    #assignments {
+        display: flex;
+        justify-content: space-between;
+        gap: 10px;
+    }
+
+    #name {
+        text-align: left;
+    }
+
+    .section {
+        padding: 2%;
+        margin: 0;
+    }
 }
