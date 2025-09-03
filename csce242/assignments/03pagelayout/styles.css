@@ -1,0 +1,198 @@
+/* PC */
+body {
+    background: #f2f1d5;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    color: #5b888c;
+    padding: 0;
+}
+
+#main-header {
+    background: #f2f1d5;
+    text-align: center;
+    padding: 0px;
+    font-size: 20px;
+}
+
+#main-header h1 {
+    font-size: 40px;
+}
+
+#header {
+    border: 1px solid #6E6F73;
+    border-bottom: none;
+}
+
+.info-img {
+    display: flex;
+    justify-content: center;
+}
+
+.info h2, .info p{
+    font-size: 25px;
+    margin-left: 20px;
+}
+
+.info {
+    margin-bottom: 10px;
+}
+
+/* Navigation */
+
+#main-nav a{
+    color: white;
+    padding: 10px 5px;
+    text-decoration: none;
+    display: block;
+    text-align: center;
+    border: 1px solid #a6beb7;
+}
+
+#main-nav ul {
+    list-style-type: none;
+    padding-left: 0;
+    background: #d88281;
+}
+
+#main-nav a:hover {
+    background: white;
+    color: #6E6F73;
+}
+
+.second-nav {
+    background: #d88281;
+    color: white;
+    padding-left: 15px;
+    padding-top: 10px;
+    padding-bottom: 30px;
+    margin: 2px;
+}
+
+.second-nav ul {
+    list-style-type: none;
+    margin: 0px;
+    padding: 0px;
+}
+
+.second-nav a{
+    color: white;
+    margin: 0px;
+    padding: 0px;
+}
+
+/* Gallery */
+
+.gallery-item {
+    background: #5e878d;
+    margin: 2px;
+    color: white;
+}
+
+.gallery-item p, .gallery-object p{
+    text-align: left;
+    margin: 10px;
+    padding-bottom: 10px;
+    font-size: 14px;
+}
+
+.gallery-item h3, .gallery-object h3 {
+    padding-top: 30px;
+    text-align: center;
+}
+
+.gallery-img {
+    display: flex;
+    justify-content: center;
+}
+
+.gallery-img img {
+    height: 100%;
+    width: 100%;
+    object-fit: contain;
+    padding: 10px;
+}
+
+.gallery-object {
+    background: #a4bfb8;
+    margin: 2px;
+    color: white;
+}
+
+.gallery-item, .gallery-object {
+    height: auto;
+}
+
+/* Main Footer */
+#main-footer {
+    background: #d88281;
+    color:white;
+    text-align: center;
+    padding: 10px;
+}
+
+
+/* Larger Devices */
+@media only screen and (min-width: 768px) {
+
+    .info-img {
+        display: flex;
+        justify-content: left;
+    }
+
+    .gallery-item h3, .gallery-object h3 {
+        margin-top: 30px;
+        padding: 0px;
+    }
+
+    .gallery-item p, .gallery-object p{
+        padding: 0px;
+    }
+
+    .gallery-item, .gallery-object {
+        height: 350px;
+    }
+
+    /* Columns */
+    .columns {
+        display: flex;
+        padding: 0%;
+        margin: 0%;
+    }
+
+    .one {
+        flex: 1;
+    }
+
+    .two {
+        flex: 2;
+    }
+
+    .three {
+        flex: 3;
+    }
+
+    .four {
+        flex: 4;
+    }
+
+    .five {
+        flex: 5;
+    }
+
+    .six {
+        flex: 6;
+    }
+
+    .seven {
+        flex: 7;
+    }
+    
+    .eight {
+        flex: 8;
+    }
+
+    .nine {
+        flex: 9;
+    }
+}
+
