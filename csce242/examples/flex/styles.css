@@ -1,5 +1,10 @@
+:root {
+    --primary-color:#3C3D40;   /* variable */
+    --secondary-color: darkgray;
+}
+
 body {
-    background: #3C3D40;
+    background: var(--primary-color);
     font-family: Arial, Helvetica, sans-serif
 }
 
@@ -16,6 +21,18 @@ body {
     color: white;
     border-radius: 5px;
     padding: 5px;
+    position: relative;
+    text-align: center;
+}
+
+#main-header img {
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 10%;
+    width: 75px;
+    border-radius: 50px;
+    padding: 5px;
 }
 
 #main-content section, #main-content aside {
@@ -23,10 +40,26 @@ body {
 }
 
 .info {
-    background-color: darkgray;
+    background: var(--secondary-color);
     padding: 5px;
     border-radius: 5px;
     margin: 5px;
+}
+
+/* Showcase */
+#showcase {
+    position: relative;
+}
+
+#showcase p {
+    background: rgba(88, 88, 88, 0.7);
+    color: black;
+    padding: 10px;
+    width: fit-content;
+
+    position: absolute;
+    bottom: 20%;
+    left: 5%;
 }
 
 /* Gallery */
@@ -51,18 +84,14 @@ img {
 }
 
 /* Main Navigation */
-#main-nav a{
-    color: white;
-    padding: 15px 5px;
-    text-decoration: none;
-    display: block;
-}
-
-#main-nav ul {
+nav ul {
     list-style-type: none;
     padding-left:0;
 }
 
+nav a {
+    text-decoration: none;
+}
 #main-nav li {
     border-bottom: 1px solid white;
 }
@@ -71,9 +100,28 @@ img {
     border-top: 1px solid white;
 }
 
+#main-nav a{
+    color: white;
+    padding: 15px 5px;
+    display: block;
+}
+/*
 #main-nav a:hover {
     background: white;
     color: #6E6F73;
+}
+    */
+
+#login-nav {
+    position: absolute;
+    top: 2.5%;
+    right: 2.5%;
+}
+
+#login-nav a {
+    color: white;
+    padding: 5px;
+    display: block;
 }
 
 /* Typography */
@@ -134,10 +182,18 @@ h1 {
         text-align: center;
     }
 
-    #main-nav a:hover {
+    nav a:hover {
         background: #6E6F73;
         color:white;
         border-bottom:1px solid white;
+    }
+
+    #login-nav a{
+        display: inline;
+    }
+
+    #login-nav li:not(:last-child)::after {
+        content: "|";
     }
 
     .hide-small {
