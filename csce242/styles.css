@@ -25,7 +25,7 @@ a {
     color: white;
 }
 
-#assignments{
+#assignments, #projects{
     display: block;
     justify-content: center;
 }
@@ -34,7 +34,7 @@ a {
     text-align: left;
 }
 
-.section {
+section {
     background-color: #112639;
     padding: 1%;
     margin: 10px auto;
@@ -43,8 +43,16 @@ a {
     color: lightgray;
 }
 
-.section p {
+#assignments p, #projects p {
     color: gray;
+}
+
+#projects section {
+    background-color: #1f4569;
+}
+
+#projects-title {
+    color: #1f4569;
 }
 
 
@@ -56,7 +64,7 @@ a {
         padding-bottom: 50px;
     }
 
-    #assignments {
+    #assignments, #projects {
         display: flex;
         justify-content: space-between;
         gap: 10px;
