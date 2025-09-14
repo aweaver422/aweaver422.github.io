@@ -1,0 +1,91 @@
+#include <iostream>
+using std::cout;
+using std::endl;
+using std::cin;
+
+// max number of times we’ll store
+const int MAX_TIMES = 1000;
+
+// global arrays to hold input
+int mmArr[MAX_TIMES];
+int ssArr[MAX_TIMES];
+int countTimes = 0;
+
+// read all times once
+void readTimes() {
+    int mm, ss;
+    char colon;
+
+    while (countTimes < MAX_TIMES) {
+        // stop if user enters 'q'
+        if (cin.peek() == 'q') {
+            cin.get(); // consume the 'q'
+            break;
+        }
+
+        if (cin >> mm >> colon >> ss) {
+            if (colon != ':' || mm < 0 || mm > 59 || ss < 0 || ss > 59) {
+                cout << "Input " << (countTimes + 1) << " did not match expected format." << endl;
+                cout << "Fastest and total running times are based on the first " 
+                     << countTimes << " inputs." << endl;
+                break;
+            }
+            mmArr[countTimes] = mm;
+            ssArr[countTimes] = ss;
+            countTimes++;
+        } else {
+            break; // stop if stream fails
+        }
+    }
+}
+
+void timesread() {
+    cout << countTimes << " valid times read." << endl;
+}
+
+void fastestmile() {
+    if (countTimes == 0) return;
+
+    int fastestMM = mmArr[0];
+    int fastestSS = ssArr[0];
+
+    for (int i = 1; i < countTimes; i++) {
+        if (mmArr[i] < fastestMM || 
+           (mmArr[i] == fastestMM && ssArr[i] < fastestSS)) {
+            fastestMM = mmArr[i];
+            fastestSS = ssArr[i];
+        }
+    }
+
+    cout << "Fastest mile time: "
+         << (fastestMM < 10 ? "0" : "") << fastestMM << ":"
+         << (fastestSS < 10 ? "0" : "") << fastestSS << endl;
+}
+
+void totaltime() {
+    int totalMM = 0, totalSS = 0, totalHH = 0;
+
+    for (int i = 0; i < countTimes; i++) {
+        totalMM += mmArr[i];
+        totalSS += ssArr[i];
+    }
+
+    totalMM += totalSS / 60;
+    totalSS %= 60;
+
+    totalHH += totalMM / 60;
+    totalMM %= 60;
+
+    cout << "Total running time: "
+         << totalHH << ":"
+         << (totalMM < 10 ? "0" : "") << totalMM << ":"
+         << (totalSS < 10 ? "0" : "") << totalSS << endl;
+}
+
+int main() {
+    readTimes();
+    timesread();
+    fastestmile();
+    totaltime();
+    return 0;
+}

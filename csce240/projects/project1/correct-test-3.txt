@@ -1,0 +1,3 @@
+2 valid times read.
+Fastest mile time: 08:38
+Total running time: 18:00
