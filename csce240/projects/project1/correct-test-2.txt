@@ -1,4 +1,0 @@
-Input 4 did not match expected format.
-Fastest and total running times are based on the first 3 valid times read.
-Fastest mile time: 10:37
-Total running time: 34:59

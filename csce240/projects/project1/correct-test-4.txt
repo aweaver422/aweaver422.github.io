@@ -1,4 +1,0 @@
-Input 1 did not match expected format.
-Fastest and total running times are based on the first 0 valid times read.
-Fastest mile time: 00:00
-Total running time: 00:00

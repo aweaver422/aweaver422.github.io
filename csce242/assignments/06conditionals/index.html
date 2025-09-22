@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Assignment 6 - JavaScript Conditionals</title>
+        <link rel="stylesheet" href="styles.css">
+    </head>
+    <body onload="time()">
+        <header>
+            <h1>Assignment 6</h1>
+            <h2>If Statements</h2>
+            <nav id="menu">
+                <span id="nav-arrow" class="hide-large">&#129171;</span>
+                <ul id="toggle-nav" class="columns hide-nav">
+                    <li id="btn-exercise-one">Exercise 1</li>
+                    <li id="btn-exercise-two">Exercise 2</li>
+                </ul>
+            </nav>
+        </header>
+        <section id="main-content">
+            <section id="exercise-one">
+                <p>How many days has it been since watering your plant?</p>
+                <div class="water-plant-slider">
+                    <input type="range" min="1" max="12" step="1" id="slider">
+                </div>
+                <img src="images/plant3.png" id="plant-img">
+                <p id="p-days-since">It's been 6 days since watering your plant</p>
+                <p id="p-plant-conditon">Leaves are dropping, the color is changing, water soon</p>
+            </section>
+            <section id="exercise-two" class="hide">
+                <h4>Our Digital Clock</h4>
+                <p id="clock-time"></p>
+            </section>
+        </section>
+        <footer>
+            <p>@name.com</p>
+        </footer>
+    </body>
+    <script src="js.js"></script>
+</html>
