@@ -1,0 +1,410 @@
+:root {
+    --primary-color: #3e0c0c;
+    --primary-light: #893434;
+    --primary-light-two: #985f5f;
+    --secondary-color: #634d3b;
+    --secondary-light: #7c634f;
+    --beige: #b5a691;
+    /*
+    --dark-green: #283618;
+    --light-green: #606C38;
+    --dark-orange: #BC6C25;
+    --light-orange: #DDA15E;
+    --beige: #FEFAE0;
+    */
+}
+
+body {
+    background: var(--beige);
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+    color: var(--primary-color);
+}
+
+.hide-small, .hide {
+    display: none;
+}
+
+/* HEADER & MAIN NAVIGATION */
+header {
+    margin: 0;
+    padding: 0;
+    background: var(--primary-color);
+    color: var(--beige);
+}
+
+header div {
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+    height: 80%;
+}
+
+#main-nav ul {
+    list-style-type: none;
+    display: block;
+    justify-content: center;
+    padding: 3px;
+}
+
+#main-nav a {
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: var(--primary-light);
+    margin: 5px;
+    padding: 0 15px;
+    color: var(--beige);
+    border-radius: 6%;
+    height: 40px;
+}
+
+#main-nav a:hover {
+    background: var(--beige);
+    color: var(--primary-light);
+}
+
+#main-nav a.current {
+    background: var(--secondary-light);
+    color: var(--primary-color);
+}
+
+/* HOME STYLING */
+hr {
+    border: 2px solid var(--primary-color);
+}
+
+#content-one img, #content-one section {
+    max-width: 100%;
+}
+
+#content-one section{
+    margin: 0px 15px;
+}
+
+#content-two {
+    background: var(--primary-light);
+    padding: 10px;
+}
+
+#content-two section {
+    margin: 20px;
+}
+
+#content-two h2, h3 {
+    text-align: center;
+    text-shadow: 1px 1px 2px var(--secondary-color);
+}
+
+#content-two li {
+    font-style: italic;
+}
+
+#content-two div {
+    margin: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#content-two button, #btn-contact-submit, #btn-career-form, #cart-checkout-info button {
+    background: var(--secondary-color);
+    margin: 5px;
+    padding: 5px 15px;
+    color: var(--beige);
+    border-radius: 6%;
+    border-color: var(--secondary-light)
+}
+
+/* MENU STYLING */
+.item {
+    margin: 40px;
+    color: var(--primary-light);
+}
+.item h3 {
+    text-shadow: none;
+    font-weight: bold;
+    text-align: left;
+}
+
+#menu-items h1 {
+    margin-left: 20px;
+}
+
+/* MONTHLY SPECIAL STYLING */
+.monthly-pizza div {
+    display: flex;
+    justify-content: center;
+}
+
+#specials section {
+    margin: 40px;
+}
+
+/* ORDER STYLING */
+#options-cart {
+    background: var(--primary-light);
+    width: 15%;
+    height: auto;
+}
+
+#side-nav ul {
+    list-style-type: none;
+}
+
+#side-nav li {
+    line-height: 30px;
+}
+
+#cart-list {
+    background: var(--beige);
+    margin: 10px;
+    padding: 60px;
+    border-radius: 8px;
+}
+
+#cart-list ul {
+    list-style-type: none;
+    padding: 0;
+    text-align: center;
+}
+
+#cart-checkout-info {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+.app-item {
+    background: var(--primary-light);
+    border-radius: 15px;
+    max-width: 40%;
+}
+
+
+/* CONTACT US STYLING */
+#socials {
+    background: var(--primary-light);
+}
+
+#contact-form {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+
+#form {
+    margin: 25px 0px;
+}
+
+#form h1 {
+    padding-top: 0;
+    margin-top: 0;
+}
+
+#form-img img {
+    max-height: 100%;
+}
+
+#contact-inputs {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    text-align: left;
+}
+
+#socials {
+    display: flex;
+}
+
+#socials div {
+    display: flex;
+    justify-content: center;
+    margin: 20px;
+    max-width: 100%;
+}
+
+#img-socials img {
+    max-width: 200px;
+    max-height: 200px;
+    border-radius: 80%;
+}
+
+#socials-list ul {
+    list-style-type: none;
+}
+
+#socials-list li {
+    line-height: 40px;
+}
+
+#socials-list a {
+    text-decoration: none;
+    color: var(--secondary-light);
+}
+
+/* CAREERS STYLING */
+#career-info {
+    background: var(--primary-light);
+    border: 5px solid var(--primary-light);
+    text-align: center;
+    padding: 20px;
+}
+
+#work-appli-form label, #work-appli-form input, #work-appli-form select {
+    line-height: 20px;
+    margin: 10px;
+    text-align: left;
+    margin-left: 40px;
+    display: flex;
+}
+
+
+.txt-label-input {
+    display: flex;
+}
+
+
+#career-info ul {
+    list-style-type: none;
+    color: var(--beige)
+}
+
+#career-info li {
+    line-height: 40px;
+}
+
+/* IMAGES */
+#indexSecondImg, .menuImg img {
+    max-width: 300px;
+    max-height: auto;
+}
+
+.specialImg img{
+    max-width: 500px;
+    max-height: 300px;
+}
+
+.hideImg {
+    display: flex;
+    justify-content: center;
+}
+
+#contactImg {
+    max-width: 900px;
+    max-height: 500px;
+}
+
+
+
+@media only screen and (min-width: 800px) { 
+    .hide-small {
+        display: block;
+    }
+
+    .hideImg {
+        display: none;
+    }
+    
+    .columns {
+        display:flex;
+    }
+
+    .gallery {
+        flex-wrap:wrap;
+        justify-content: space-between;
+    }
+
+    #main-nav ul {
+        display: flex;
+    }
+
+    #main-nav {
+        position: relative;
+        left: 700px;
+        top: 25px;
+    }
+
+    #content-one img {
+        margin: 30px;
+        width: 50%;
+    }
+
+    #content-one section {
+        margin: 6%;
+        margin-left: 2%;
+        margin-right: 8%;
+    }
+
+    #content-two section {
+        background: var(--primary-light-two);
+    }
+
+    .one {
+        flex: 1;
+    }
+
+    .two {
+        flex: 2;
+    }
+
+    /* MENU ITEMS */
+    #menu-imgs div{
+        display: flex;
+        justify-content: center;
+        margin: 20px;
+    }
+
+    #menu-items hr {
+        margin: 45px;
+    }
+
+    .item {
+        margin: 0px;
+        margin-left: 100px;
+        color: var(--primary-light);
+    }
+
+    .item section h4 {
+        margin-left: 10px;
+    }
+
+    .item p {
+        margin: 0;
+    }
+
+    /* CONTACT FORM */
+    #form {
+        margin-top: 100px;
+    }
+
+    #contact-form {
+        height: 500px;
+    }
+
+    #career-info {
+        max-width: 50%;
+    }
+
+    #content-career {
+        height: 589px;
+    }
+
+    #work-appli-form label, #work-appli-form input, #work-appli-form select {
+        display: block;
+        line-height: 20px;
+        margin: 10px;
+        text-align: left;
+        margin-left: 40px;
+    }
+
+    #work-appli-form section {
+        text-align: center;
+    }
+    
+    #content-order {
+        height: 589px;
+    }
+}
