@@ -1,0 +1,145 @@
+body {
+    background: #3d5b66;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    color: #24353c;
+    margin: 0% 5%;
+}
+
+#main-content {
+    background: #608fa0;
+    border: 2px #314a53 solid;
+    height: 500px;
+}
+
+.hide-large {
+    display: flex;
+}
+
+h2 {
+    color: peachpuff;
+}
+
+/* CSS ART */
+/* CLOUD */
+.cloudL {
+    position: absolute;
+    top: 300px;
+    left: 200px;
+    width: 60px;
+    height: 60px;
+    background: white;
+    border-radius: 50%;
+    opacity: 90%;
+}
+
+.cloudB {
+    position: absolute;
+    top: 310px;
+    left: 270px;
+    width: 80px;
+    height: 50px;
+    background: white;
+    border-radius: 50%;
+    opacity: 90%;
+}
+
+.cloudR {
+    position: absolute;
+    top: 280px;
+    left: 310px;
+    width: 70px;
+    height: 70px;
+    background: white;
+    border-radius: 50%;
+    opacity: 90%;
+}
+
+/* TREE */
+.treeT {
+    position: absolute;
+    top: 500px;
+    left: 282px;
+    background: green;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+}
+
+.treeB {
+    position: absolute;
+    top: 550px;
+    left: 300px;
+    background: brown;
+    width: 15px;
+    height: 40px;
+}
+
+/* SUN AND MOON */
+.sun {
+    position: absolute;
+    left: 1300px;
+    background: gold;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+}
+
+.moonBig {
+    position: absolute;
+    left: 1300px;
+    background: beige;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+}
+
+.moonLil {
+    position: absolute;
+    top: 190px;
+    left: 1290px;
+    background: black;
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+}
+
+
+
+@media only screen and (max-width: 600px) {
+    
+    .cloudL {
+        width: 25px;
+        height: 30px;
+    }
+
+    .cloudB {
+        width: 35px;
+        height: 20px;
+    }
+
+    .cloudR {
+        width: 25px;
+        height: 25px;
+    }
+    
+    .treeT {
+        width: 30px;
+        height: 30px;
+    }
+
+    .treeB {
+        width: 10px;
+        height: 20px;
+    }
+
+    .moonBig {
+        width: 50px;
+        height: 50px;
+    }
+
+    .moonLil {
+        width: 40px;
+        height: 40px;
+    }
+}
