@@ -1,0 +1,157 @@
+body {
+    background: #3d5b66;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    color: #24353c;
+    margin: 0% 5%;
+}
+
+h2 {
+    color: peachpuff;
+}
+
+p {
+    color: rgb(158, 133, 111);
+}
+
+.item {
+    background: peachpuff;
+    display: block;
+    justify-content: center;
+    /*padding: 15px;*/
+    border-radius: 5%;
+    margin: 5% 20%;
+}
+
+.item p, #popup p {
+    padding: 0;
+    margin: 0;
+    position: relative;
+}
+
+#popup p:hover {
+    cursor: pointer;
+}
+
+.item-img img, #popup img {
+    align-items: center;
+    padding: 10% 0%;
+    height: 300px;
+    width: 200px;
+    object-fit: cover;
+    overflow: hidden;
+}
+
+#img-desc {
+    background: peachpuff;
+    opacity: 50%;
+    align-items: center;
+    padding: 10px;
+    margin: 0;
+}
+
+/* POPUP */
+#popup {
+    background: palevioletred;
+    box-shadow: 4px 4px 10px #24353c;
+    border-radius: 5%;
+}
+
+.hide {
+    display: none;
+}
+
+#popup img, #popup h2, #popup p {
+    margin: 0;
+    padding: 0;
+    padding-bottom: 10px;
+}
+
+#popup p {
+    padding: 0;
+    margin: 0;
+    font-size: 15px;
+    position: relative;
+    top: 10px;
+    left: 200px;
+    color: #24353c;
+    font-weight: bolder;
+}
+
+    #desc-div {
+        position: relative;
+        width: 0;
+        height: 0;
+    }
+
+    #desc-p {
+        position: absolute;
+        background: pink;
+        opacity: 95%;
+        width: 182px;
+        left: 30px;
+        top: -65px;
+        padding: 10px;
+        display: none;
+    }
+
+    .item:hover #desc-p {
+        display:block;
+    }
+
+    a {
+        color: beige;
+        text-decoration: none;
+    }
+@media only screen and (min-width: 768px) {
+
+    .columns {
+        display: flex;
+        padding: 0%;
+        margin: 0% 10%;
+    }
+
+    .one {
+        flex: 1;
+    }
+
+    .item {
+        padding: 15px;
+        border-radius: 5%;
+        margin: 0px 20px;
+        padding: 0;
+    }
+
+    #desc-p {
+        width: 185px;
+        left: 15px;
+    }
+
+    /* POPUP */
+    #popup {
+        padding: 0px 20px;
+        position: absolute;
+        left: 42%;
+        z-index: 100;
+    }
+    
+    #popup p {
+        font-size: 10px;
+        position: relative;
+        top: 10px;
+        left: 100px;
+    }
+
+    #popup h2 {
+        margin: 0;
+        padding: 0;
+        font-size: 15px;
+        padding-bottom: 5px;
+    }
+
+    #popup img {
+        padding: 0;
+        margin: 0;
+        padding-bottom: 10px;
+    }
+}
