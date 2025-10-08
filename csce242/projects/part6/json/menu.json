@@ -146,7 +146,7 @@
     {
         "_id":19,
         "name": "S'mores Pizza",
-        "img": "images/desserts/cheesecake.jpg",
+        "img": "images/desserts/smores.png",
         "type": "dessert",
         "description": "Pizza dough base with chocolate, marshmallows, and crushed graham crackers.",
         "price": "12" 
