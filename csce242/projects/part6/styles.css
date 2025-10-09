@@ -364,6 +364,10 @@ hr {
     padding: 8px;
 }
 
+#options-cart h3 {
+    color: var(--secondary-color);
+}
+
 #side-nav ul {
     list-style-type: none;
 }
