@@ -13,7 +13,12 @@
             </div>
             <h1 id="header-title"><a href="index.html">Clay Oven Pizzeria</a></h1>
             <nav id="main-nav">
-                <ul class="columns">
+                <div id="toggle-nav">
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                </div>
+                <ul class="columns hide" id="nav-elements">
                     <li><a href="menu.html">MENU</a></li>
                     <li><a href="monthly-special.html">SPECIALS</a></li>
                     <li><a href="order.html">ORDER</a></li>
@@ -25,7 +30,7 @@
         
         <section id="content-header">
             <img src="images/home-pg-pizza.jpeg">
-            <section>
+            <section class="hide-small">
                 <h2>CLAY OVEN PIZZERIA</h2>
             </section>
         </section>
@@ -42,7 +47,7 @@
                     <h4>Use our new mobile system today!</h4>
                     <button>Order Now!</button>
                 </div>
-                <div id="img-content-place-order" class="one">
+                <div id="img-content-place-order" class="one hide-small">
                     <img src="images/placeOrder.jpg">
                 </div>
             </section>
@@ -80,7 +85,7 @@
 
         <section id="content-rewards">
             <section class="columns">  
-                    <div id="img-content-rewards" class="one">
+                    <div id="img-content-rewards" class="one hide-small">
                         <img src="images/garnishing-pizza.jpg">
                     </div>
                     <div id="info-content-rewards" class="one">
@@ -130,5 +135,6 @@
                 <li>Follow us on <a href="#">Facebook,</a><a href="#">Instagram,</a> and <a href="#">TikTok!</a></li>
             </ul>
         </footer>
+    <script src="js/nav.js"></script>
     </body>
 </html>

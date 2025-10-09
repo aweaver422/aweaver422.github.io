@@ -26,6 +26,10 @@ body {
     display: none;
 }
 
+.hide-nav {
+    display: none !important;
+}
+
 #header-title a {
     color: var(--secondary-light);
     font-family:Arial, Helvetica, sans-serif;
@@ -49,18 +53,26 @@ header, footer {
     box-shadow: var(--primary-color) 0px 0px 10px;
 }
 
-header div {
-    display: flex;
-    justify-content: center;
+header {
+    text-align: center;
     padding: 20px;
     height: 80%;
 }
 
+#title {
+    text-align: center;
+    letter-spacing: 2px;
+    color: black;
+    font-size: 35px;
+    background: var(--secondary-sub);
+    margin: 0;
+}
+
+
 #main-nav ul {
     list-style-type: none;
     display: block;
-    padding: 3px;
-    position: absolute;
+    padding: 0;
 }
 
 #main-nav a {
@@ -105,15 +117,37 @@ footer {
     margin-right: 4px;
 }
 
+#toggle-nav {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#toggle-nav div {
+    position: relative;
+    width:25px;
+    height:2px;
+    background-color:var(--secondary-color);
+    margin: 4px 0;
+}
+
+#content-header img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    filter: grayscale(25%);
+}
+
+
 /* HOME STYLING */
 hr {
     border: 2px solid var(--primary-color);
 }
 
 #content-about-us {
-    padding: 25px 300px;
-    font-size: 20px;
-    line-height: 40px;
+    margin: 20px;
+    margin-bottom: 30px;
 }
 
 #content-about-us h3, #content-menu-preview h2 {
@@ -164,12 +198,13 @@ hr {
     margin: 0;
 }
 
-#info-place-order {
+#info-place-order, .monthly-pizza section {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     text-align: center;
+    padding: 15px;
 }
 
 #img-content-place-order img {
@@ -214,7 +249,7 @@ hr {
 }
 
 .img-menu-preview img {
-    width: 100%;
+    width: 125px;
     height: 100%;
     object-fit: cover;
     display: block;
@@ -265,7 +300,6 @@ hr {
 /* MENU STYLING */
 .item {
     margin: 40px;
-    color: var(--primary-light);
 }
 .item h3 {
     font-weight: bold;
@@ -274,11 +308,16 @@ hr {
 }
 
 #menu-items h2 {
-    margin-left: 80px;
+    text-align: center;
     font-weight: bolder;
 }
 
 #menu-items {
+    margin-bottom: 50px;
+    width: 100%;
+}
+
+#app, #pizza, #desserts {
     margin-bottom: 50px;
 }
 
@@ -294,8 +333,23 @@ hr {
 }
 
 #specials section {
-    margin: 40px;
     text-align: center;
+}
+
+#special-desc {
+    margin: 10px 20px;
+    font-size: 20px;
+    line-height: 30px;
+}
+
+.monthly-pizza h1 {
+    margin-bottom: 5px;
+}
+
+.monthly-pizza p {
+    line-height: 25px;
+    margin: 40px;
+    margin-bottom: 10px;
 }
 
 /* ORDER STYLING */
@@ -348,8 +402,8 @@ hr {
     border-radius: 10%;
 }
 
-.order-item h4, .order-item h5 {
-    margin-left: 10px;
+.order-item h4 {
+    margin-left: 15px;
 }
 
 .order-item img {
@@ -359,9 +413,9 @@ hr {
     border-top-right-radius: 10%;
 }
 
-#order-item {
-    display: block;
-    margin: 10px 100px;
+.order-item p {
+    font-size: 12px;
+    margin: 15px;
 }
 
 .gallery {
@@ -377,6 +431,8 @@ hr {
 /* CONTACT US STYLING */
 #socials {
     background: var(--secondary-color);
+    display: flex;
+    padding: 0px 80px;
 }
 
 #contact-form {
@@ -405,10 +461,6 @@ hr {
     text-align: left;
 }
 
-#socials {
-    display: flex;
-}
-
 #socials div {
     display: flex;
     justify-content: center;
@@ -419,11 +471,12 @@ hr {
 #img-socials img {
     max-width: 200px;
     max-height: 200px;
-    border-radius: 80%;
 }
 
 #socials-list ul {
     list-style-type: none;
+    padding: 0;
+    margin: 0;
 }
 
 #socials-list li {
@@ -433,6 +486,16 @@ hr {
 #socials-list a {
     text-decoration: none;
     color: var(--secondary-light);
+}
+
+
+#socials-desc {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    line-height: 40px;
+    letter-spacing: 1px;
 }
 
 /* CAREERS STYLING */
@@ -481,8 +544,10 @@ hr {
 
 /* IMAGES */
 .specialImg img{
-    max-width: 500px;
-    max-height: 300px;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    margin-bottom: 0;
 }
 
 .hideImg {
@@ -499,13 +564,16 @@ hr {
     display: none;
 }
 
-
 @media only screen and (min-width: 800px) { 
     /* HEADER */
     #header-title {
         position: absolute;
         left: 250px;
-        top: 30px;
+        top: 50px;
+    }
+    
+    #toggle-nav {
+        display:none;
     }
     
     /* FOOTER */
@@ -563,12 +631,21 @@ hr {
         display: block;
     }
 
+
     .hideImg {
         display: none;
     }
     
     .columns {
         display:flex;
+    }
+
+    .one {
+        flex: 1;
+    }
+
+    .two {
+        flex: 2;
     }
 
     .gallery {
@@ -579,6 +656,8 @@ hr {
     /* NAVIGATION */
     #main-nav ul {
         display: flex;
+        padding: 3px;
+        position: absolute;
     }
 
     #main-nav {
@@ -601,14 +680,7 @@ hr {
         background: none;
     }
 
-    /* CONTENT */
-    #content-header img {
-        width: 100%;
-        height: 100%;
-        object-fit: cover;
-        filter: grayscale(25%);
-    }
-
+    /* MAIN CONTENT */
     #content-header {
         height: 560px;
     }
@@ -630,33 +702,39 @@ hr {
         background: var(--primary-light-two);
     }
 
-    .one {
-        flex: 1;
+    
+    #content-about-us {
+        max-width: 100%;
+        padding: 25px 300px;
+        font-size: 20px;
+        line-height: 40px;
     }
 
-    .two {
-        flex: 2;
+    .img-menu-preview img {
+        width: 100%;
     }
 
     /* MENU ITEMS */
-    #menu-imgs img{
-        max-width: 100%;
-        height: auto;
-        object-fit: cover;
+    .menu-imgs img{
+        width: 150px;
+        height: 100px;
+        object-fit: cover; 
         display: block;
+        border-radius: 8px;
     }
 
-    #menu-items hr {
+    .menu-items hr {
         margin: 45px;
     }
 
     .menuImg {
-        max-width: 300px;
+        max-width: 150px;
         max-height: 200px;
+        margin-right: 15px;
     }
 
     .item {
-        margin: 0px 80px;
+        margin: 0px 400px;
         color: var(--primary-light);
     }
 
@@ -731,9 +809,13 @@ hr {
 
     .order-item button {
         position: absolute;
-        top: 275px;
-        left: 245px;
-    
+        top: 250px;
+        left: 240px;
+    }
+
+    .order-item-header h4, .order-item-header button  {
+        margin-bottom: 0; 
+        padding-bottom: 0;
     }
 
     /* SPECIALS */
@@ -741,8 +823,8 @@ hr {
         padding-top: 40px;
     }
 
-    #specials section {
-        text-align: left;
+    #special-desc {
+        margin: 30px 250px;
     }
 
     /* CAREERS */
