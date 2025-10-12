@@ -169,13 +169,17 @@ hr {
 
 #info-place-order button {
     background: var(--secondary-sub);
-    color: var(--primary-color);
     margin: 5px;
     padding: 10px;
     border-radius: 6%;
     border-color: none;
     font-size: 15px;
     font-weight: bolder;
+}
+
+#info-place-order a {
+    text-decoration: none;
+    color: var(--primary-color);
 }
 
 #info-place-order h4 {
