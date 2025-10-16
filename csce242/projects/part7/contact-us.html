@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Contact Us - Clay Oven Pizzeria</title>
+        <link rel="stylesheet" href="styles.css">
+        <meta name="viewport" content="width=device-width, intial-scale=1.0">
+    </head>
+
+    <body>
+        <header class="columns">
+            <div id="logo">
+                <a href="index.html">
+                    <img src="images/logo.png">
+                </a>
+            </div>
+            <h1 id="header-title"><a href="index.html">Clay Oven Pizzeria</a></h1>
+            <nav id="main-nav">
+                <div id="toggle-nav">
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                </div>
+                <ul class="columns hide" id="nav-elements">
+                    <li><a href="menu.html">MENU</a></li>
+                    <li><a href="monthly-special.html">SPECIALS</a></li>
+                    <li><a href="order.html">ORDER</a></li>
+                    <li><a href="contact-us.html">CONTACT US</a></li>
+                    <li><a href="careers.html">CAREERS</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <h1 id="title">CONTACT US</h1> 
+
+        <section id="content-contact">
+            <section id="contact-form" class="columns">
+                <section id="form" class="one">
+                    <h2>Questions? Concerns?</h1>
+                    <p>Give us a call today at (123) 456-7890, or submit a message below:</p>
+                    <form method="POST" id="contact-inputs">
+                        <input type="hidden" name="access_key" value="c05e4dce-6afb-4b14-bd69-07a30774eeeb">
+                        <div>
+                            <label for="name">Name:</label>
+                            <input type="text" name="name" required>
+                        </div>
+                        <div>
+                            <label for="phone">Phone Number:</label>
+                            <input type="phone" name="phone" required>
+                        </div>
+                        <div>
+                            <label for="email">Email:</label>
+                            <input type="email" name="email" required>
+                        </div>
+                        <div>
+                            <label for="message">Message:</label>
+                            <textarea name="message" required></textarea>
+                        </div>
+                        <button id="btn-contact-submit" type="submit">Submit Form</button>
+                        <p id="contact-result"></p>
+                    </form>
+                </section>
+                <div id="form-img" class="one hide-small">
+                    <img src="images/woodfireStock.jpg" id="contactImg">
+                </div>
+            </section>
+
+            <section id="socials" class="columns">
+                <div class="one">
+                    <div id="img-socials">
+                        <img src="images/phone-stock.jpg">
+                    </div>
+                    <section id="socials-list">
+                        <h1>Follow us on our social medias!</h1>
+                        <ul>
+                            <li><a href="#">Facebook: Clay Oven Pizzeria</a></li>
+                            <li><a href="#">Instagram: @clayovenpizzeria</a></li>
+                            <li><a href="#">TikTok: @clay-oven-pizzeria</a></li>
+                        </ul>
+                    </section>
+                </div>
+                <section class="one" id="socials-desc">
+                    <p>Stay connected with us on social media for a slice of the action! Be the first to hear about our latest pizzas, monthly specials, and exclusive deals. Follow along for exciting giveaways, limited-time promotions, and behind-the-scenes updates you won’t find anywhere else. Join our online community and never miss a chance to grab your favorite pies at a great price!</p>
+                </section>
+            </section>
+
+            <section id="map" class="columns">
+                <iframe class="one" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2993.2839170606753!2d-81.04128601914785!3d34.000587951312376!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x88f8bb75aca40063%3A0x1f3732059cda8bb1!2sThe%20Vista!5e1!3m2!1sen!2sus!4v1760572002594!5m2!1sen!2sus" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                <div class="one">
+                    <h1>Our Restaurant Location</h1>
+                    <p id="map-desc">123 Gervais St, Columbia, SC 29201</p>
+                </div>
+            </section>
+
+        </section>
+        <footer id="main-footer">
+            <ul>
+                <li>Clay Oven Pizzeria, est. 20XX</li>
+                <li>Call us at (123) 456-7890</li>
+                <li>Follow us on <a href="#">Facebook,</a><a href="#">Instagram,</a> and <a href="#">TikTok!</a></li>
+            </ul>
+        </footer>
+        <script src="js/nav.js"></script>
+        <script src="js/contact.js"></script>
+    </body>
+</html>

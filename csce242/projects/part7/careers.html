@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Careers - Clay Oven Pizzeria</title>
+        <link rel="stylesheet" href="styles.css">
+        <meta name="viewport" content="width=device-width, intial-scale=1.0">
+    </head>
+
+    <body>
+        <header class="columns">
+            <div id="logo">
+                <a href="index.html">
+                    <img src="images/logo.png">
+                </a>
+            </div>
+            <h1 id="header-title"><a href="index.html">Clay Oven Pizzeria</a></h1>
+            <nav id="main-nav">
+                <div id="toggle-nav">
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                </div>
+                <ul class="columns hide" id="nav-elements">
+                    <li><a href="menu.html">MENU</a></li>
+                    <li><a href="monthly-special.html">SPECIALS</a></li>
+                    <li><a href="order.html">ORDER</a></li>
+                    <li><a href="contact-us.html">CONTACT US</a></li>
+                    <li><a href="careers.html">CAREERS</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <h1 id="title">CAREERS</h1>
+
+        <section id="content-career" class="columns">
+            <section id="career-info" class="one">
+                <div id="career-img" class="hide-small">
+                    <img src="images/pizzamaker.png">
+                </div>
+                <h1>We Are Currently Hiring for the Following Positions:</h1>
+                <div class="columns" id="positions">
+                    <ul>
+                        <li>Pizza Maker</li>
+                        <li>Prep Cook</li>
+                        <li>Server</li>
+                        <li>Host<li>
+                        <li>Dishwasher</li>
+                    </ul>
+                    <ul class="hide-small">
+                        <li>Makes and cooks pizzas</li>
+                        <li>Prepares ingredients for cooking</li>
+                        <li>Takes orders and serves food</li>
+                        <li>Greets and seats guests</li>
+                        <li>Washes dishes and kitchen tools</li>
+                    </ul>
+                </div>
+            </section>
+            <form method="POST" id="work-appli-form" class="one">
+                <input type="hidden" name="access_key" value="c05e4dce-6afb-4b14-bd69-07a30774eeeb">
+                <div class="columns">
+                    <label class="one" for="name">Full Name:</label>
+                    <input class="one" type="text" name="name" required>
+                </div>
+                <div class="columns">
+                    <label class="one" for="phone">Phone Number:</label>
+                    <input class="one" type="phone" name="phone" required>
+                </div>
+                <div class="columns">
+                    <label class="one" for="email">Email:</label>
+                    <input class="one" type="email" name="email" required>
+                </div>
+                <div class="columns">
+                    <label class="one" for="address">Address:</label>
+                    <input class="one" type="text" name="address" required>
+                </div>
+
+                <hr>
+                
+                <div class="columns">
+                    <label class="one" for="position">Position:</label>
+                    <input class="one" type="text" name="position" required>
+                </div>
+                <div class="columns">
+                    <label class="one" for="experience">Prior Experience:</label>
+                    <input class="one" type="text" name="experience" required>
+                </div>
+                <div class="columns">
+                    <label class="one" for="certifs">Certifications:</label>
+                    <input class="one" type="text" name="certifs" required>
+                </div>
+                <div class="columns">
+                    <label class="one" for="seeking">Seeking:</label>
+                    <select class="one" type="text" name="seeking" required>
+                        <option value="full">Full-Time</option>
+                        <option value="part">Part-Time</option>
+                        <option value="no-pref">No Preference</option>
+                    </select>
+                </div>
+                <div class="columns">
+                    <label class="one" for="availability">Availability:</label>
+                    <select class="one" type="text" name="availability" required>
+                        <option value="mon">Monday</option>
+                        <option value="tue">Tuesday</option>
+                        <option value="wed">Wednesday</option>
+                        <option value="thu">Thursday</option>
+                        <option value="fri">Friday</option>
+                        <option value="sat">Saturday</option>
+                        <option value="sun">Sunday</option>
+                    </select>
+                </div>
+
+                <hr>
+
+                <div class="columns">
+                    <label class="one" for="felony">Have you ever been convicted of a felony?</label>
+                    <select class="one" type="text" name="felony" required>
+                        <option value="yes">Yes</option>
+                        <option value="no">No</option>
+                    </select>
+                </div>
+                <div class="columns">
+                    <label class="one" for="felony-exp">If yes please explain:</label>
+                    <input class="one" type="text" name="felony-exp">
+                </div>
+                <div class="columns">
+                    <label class="one" for="fired">Have you ever been fired from a job?</label>
+                    <select class="one" type="text" name="fired">
+                        <option value="yes">Yes</option>
+                        <option value="no">No</option>
+                    </select>
+                </div>
+                <div class="columns">
+                    <label class="one" for="fired-exp">If yes please explain:</label>
+                    <input class="one" type="text" name="fired-exp">
+                </div>
+                <div id="btn">  
+                    <button id="btn-career-form" type="submit">Submit Form</button>
+                </div>
+                <p id="career-result"></p>
+            </form>
+        </section>
+        <footer id="main-footer">
+            <ul>
+                <li>Clay Oven Pizzeria, est. 20XX</li>
+                <li>Call us at (123) 456-7890</li>
+                <li>Follow us on <a href="#">Facebook,</a><a href="#">Instagram,</a> and <a href="#">TikTok!</a></li>
+            </ul>
+        </footer>
+        <script src="js/nav.js"></script>
+        <script src="js/contact.js"></script>
+    </body>
+</html>
