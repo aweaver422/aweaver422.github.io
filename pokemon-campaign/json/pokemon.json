@@ -1,0 +1,10 @@
+[
+    {
+        "_id": 1,
+        "number": "007",
+        "name": "Squirtle",
+        "title": "Tiny Turtle",
+        "type": "WATER",
+        "desc": "Its shell is soft immediately after it is born. In no time at all, the shell becomes so resilient that a prodding finger will bounce right off it."
+    }
+]
