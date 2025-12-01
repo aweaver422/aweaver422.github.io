@@ -45,3 +45,5 @@ class StreamingTrack : public SongRecording {
 };
 
 } // namespace csce240_programming_assignment_5
+
+#endif
